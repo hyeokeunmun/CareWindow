@@ -1,0 +1,78 @@
+Verified Gradle JVM test reports · 2026-11-14
+Robolectric is Android JVM testing, not device/emulator execution.
+
+Core JVM
+ai.carewindow.core.CarePlannerTest: tests=45 failures=0 errors=0 skipped=0
+  PASS mixedLiveAndDemoIsRejected
+  PASS batteryAgeCheckedIndependently
+  PASS inactiveRouteIsRejected
+  PASS estimateFromPreviousRouteRevisionIsRejected
+  PASS validLiveRequestPassesCoreGate
+  PASS differentStopCannotReuseApproval
+  PASS estimateFromDifferentRouteIsRejected
+  PASS chargingNeedExcludesLake
+  PASS impossibleBatteryHasNoRecommendations
+  PASS invalidBreakRejected
+  PASS expiringDataDuringDialogLocksConfirmation
+  PASS countdownNeverBecomesNegative
+  PASS longTripCannotFitWindow
+  PASS currentSelectionUsesLatestCandidateData
+  PASS countdownRoundsPartialMinuteUp
+  PASS drivingRestrictionDuringDialogLocksConfirmation
+  PASS noVerifiedFacilityCannotReachNavigation
+  PASS demoCanNeverReachRealNavigation
+  PASS disconnectionHasNoRecommendations
+  PASS staleEstimateIsNotSuitable
+  PASS planEditInvalidatesApproval
+  PASS pendingRequestCannotBeDuplicated
+  PASS existingWaypointCannotBeDuplicated
+  PASS routeRevisionChangeInvalidatesApproval
+  PASS oneMillisecondLateIsRejected
+  PASS currentSelectionRejectsAmbiguousDuplicateIds
+  PASS absentBatteryHasNoRecommendations
+  PASS negativeTravelRejected
+  PASS freshBoundaryIsInclusive
+  PASS destinationChangeInvalidatesApproval
+  PASS routeAgeCheckedIndependently
+  PASS currentSelectionRejectsRemovedStop
+  PASS invalidLatitudeRejected
+  PASS exactDemoReserveIsAllowed
+  PASS noCoordinatesCannotReachNavigation
+  PASS exactDeadlineIsAllowed
+  PASS nanLongitudeRejected
+  PASS belowDemoReserveIsRejected
+  PASS currentSelectionRejectsChangedTraffic
+  PASS staleUxStateLocksRequest
+  PASS currentSelectionRejectsDisconnectedSource
+  PASS unknownUxStateLocksRequest
+  PASS defaultBestIsForest
+  PASS changingNeedSelectsLake
+  PASS futureSampleIsRejected
+ai.carewindow.core.HandoffSessionTest: tests=8 failures=0 errors=0 skipped=0
+  PASS processRestartWithJournalStaysLocked
+  PASS explicitExternalCheckEnablesNewRequest
+  PASS unrelatedObservationDoesNotCreateSuccess
+  PASS observedWaypointDoesNotMeanRoutingComplete
+  PASS timeoutBlocksAutomaticRetry
+  PASS sdkCallIsNotAcceptance
+  PASS lateObservationCannotResolveUncertainResult
+  PASS rapidDoubleConfirmationBlocked
+ai.carewindow.core.WaypointReadTrackerTest: tests=9 failures=0 errors=0 skipped=0
+  PASS lateResponseCannotBeAccepted
+  PASS allowsOneOutstandingRead
+  PASS resetRequiresExplicitNewConnection
+  PASS dropsPreviousRouteResponse
+  PASS acceptsSameRouteRevision
+  PASS actualNavigationWritesAreSafetyDisabled
+  PASS allowsNewReadAfterDiscardedResponse
+  PASS timedOutReadCannotBeRetriedUntilReconnect
+  PASS unsolicitedCallbackCannotBecomeFreshList
+
+Android JVM UI / Robolectric API 35
+ai.carewindow.MainActivityTest: tests=6 failures=0 errors=0 skipped=0
+  PASS changingNeedLeavesOnlyOneSuitablePreview
+  PASS disconnectedScenarioHasNoPreviewActions
+  PASS timerDoesNotReplaceTheViewTree
+  PASS recreatedActivityRestoresPlanAndScenario
+  PASS launchShowsSimulationAndLocksLiveOnOrdinaryAndroid
+  PASS cancelClosesPreviewWithoutNavigation

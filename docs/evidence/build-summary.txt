@@ -1,0 +1,11 @@
+2026-11-14 · v0.2.0-debug-starter
+JDK: Temurin 17.0.21+9
+SDK: Android 35 r2; Build Tools 35.0.0
+Gradle 8.10.2; AGP 8.8.2; Kotlin 2.0.0
+Tasks: :core:test :app:testDebugUnitTest :app:lintDebug :app:assembleDebug
+Result: BUILD SUCCESSFUL
+Core JUnit: 62 tests, 0 failures, 0 errors, 0 skipped
+Robolectric Android JVM UI: 6 tests, 0 failures, 0 errors, 0 skipped
+Android Lint: No issues found
+APK signature: verifies, v2, one debug signer
+Device installation / emulator / PLEOS services: NOT RUN
