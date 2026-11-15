@@ -8,5 +8,6 @@ local.properties
 verification-cache/
 .signing/
 *.apk
+!/apk/문혁은_쉴틈_release.apk
 *.aab
 .DS_Store
